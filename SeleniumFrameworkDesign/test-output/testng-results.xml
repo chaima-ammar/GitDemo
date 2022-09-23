@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="14009" started-at="2022-09-20T20:50:46Z" finished-at="2022-09-20T20:51:00Z">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@58134517]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test name="Default test" duration-ms="14009" started-at="2022-09-20T20:50:46Z" finished-at="2022-09-20T20:51:00Z">
+      <class name="cucumber.TestNGTestRunner">
+        <test-method status="PASS" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumber.TestNGTestRunner@58134517]" name="setUpClass" is-config="true" duration-ms="1473" started-at="2022-09-20T20:50:46Z" finished-at="2022-09-20T20:50:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@dca2615]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method status="FAIL" signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumber.TestNGTestRunner@58134517]" name="runScenario" duration-ms="12374" started-at="2022-09-20T20:50:47Z" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2022-09-20T20:51:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Positive Test of StandAlone the order"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Purchase the order from Ecommerce Website"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at rahulshettyacademy.pageobjects.ProductCatalogue.addProductToCart(ProductCatalogue.java:54)
+at rahulshettyacademy.stepDefinitions.SteupDefinitionImpl.i_add_product_to_Cart(SteupDefinitionImpl.java:39)
+at ✽.I add product ZARA COAT 3 to Cart(file:///home/chaima/eclipse-workspace/SeleniumFrameworkDesign/src/test/java/cucumber/StandAlone.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method status="PASS" signature="tearDownClass()[pri:0, instance:cucumber.TestNGTestRunner@58134517]" name="tearDownClass" is-config="true" duration-ms="108" started-at="2022-09-20T20:51:00Z" finished-at="2022-09-20T20:51:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumber.TestNGTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
